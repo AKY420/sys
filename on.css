@@ -1,0 +1,451 @@
+*{
+    padding: 0px;
+ box-sizing: border-box;
+    margin: 0px;
+}
+.con{
+    padding: 20px;
+}
+
+#hi1{
+    display: flex;
+    
+}
+#i1{
+    height: 2.5rem;
+    width: 4rem;
+}
+a{
+    text-decoration: none;
+}.heading{
+ display: flex;
+   justify-content: space-around;
+}
+@media (max-width:730px)
+{
+    .heading{
+        justify-content: space-between;
+    }
+}
+#hi2{
+     display: none; 
+    
+   gap: 1rem;
+   
+}
+@media screen and (min-width:730px){
+    #hi2{
+        display: flex;
+}
+}
+#hi2 a{
+    color: rgb(99, 96, 96);
+    font-size: 1.2rem;
+}
+#hi2 a:hover{
+    color: rgb(86, 148, 240);
+    font-weight: 500;
+}
+#hi3{
+    display: none; 
+    border:none;
+    background-color: rgb(108, 108, 219);
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+    
+}
+@media  screen and (min-width:730px) {
+        #hi3{
+            display: block;
+        }
+}
+#hi3 a{
+    color: aliceblue;
+}#hi3:hover{
+background-color: blue;
+}
+.menu-button{
+    display: none;
+}
+#imgicon{
+    height: 2rem;
+    width: 3rem;
+}
+@media  screen and (max-width:730px) {
+    .menu-button{
+  display: block;
+   }
+}
+.content{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.content .leftcontent{
+    width: 60%
+}
+.leftcontent h1{
+    max-width: 90%;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.leftcontent #p1{
+    padding-top: 5rem;
+    color: rgb(33, 66, 213);
+   
+}
+.rightcontent img{ 
+    border-radius: .63rem;
+    height: 60vh;
+    width: 40vw;
+}
+   .leftcontent #p2{
+    padding-top: 3rem;
+    max-width: 70%;
+    color: rgb(138, 134, 134);
+    padding-bottom: 2rem;
+}
+.leftcontent{
+    animation:lefttoright  3s ease 0s 1 both;
+}
+  @keyframes lefttoright {
+    0%{
+        opacity: 0;
+transform: translateX(-300px);
+    }
+    100%{
+transform: translateX(0);
+opacity: 1;
+    }
+}
+#a1{
+    border: none;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 0.4rem;
+     margin-right: 2rem; 
+     margin-bottom: 2rem;
+}#a2{
+    border: none;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: rgb(72, 72, 75);
+    color: aliceblue;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width:730px){
+    .content .leftcontent{
+        width: 100%;
+    }
+   .content{
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+   .rightcontent img{
+    height: 40vh;
+    width: 50vw;
+    border-radius: 15px;
+   }
+   .leftcontent h1{
+    font-size: 2.5rem;
+    text-align: center;
+   max-width: 100%;
+   }
+   .leftcontent #p1{
+   text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+   }
+   .leftcontent .decision{
+    text-align: center;
+   }
+   .leftcontent #p2{
+    max-width: 100%;
+    text-align: center;
+   }
+   .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   }
+   .mini{
+    animation:lefttoright  3s ease 0s 1 both;
+     display: flex; 
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+   }
+   .minicon{
+    animation:lefttoright  3s ease 0s 1 both;
+    background-color: rgb(231, 231, 224);
+   gap: 4rem;
+   padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    border: none;
+    border-radius: 0.625rem;
+   margin-bottom: 3rem;
+   }
+   @media  screen and (max-width:730px) {
+    .minicon{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+   }
+   .mini h1{
+    padding-bottom: 1rem;
+   }
+   .foot{
+    margin: 0 auto;
+    
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    
+    background-color: rgb(234, 232, 232);
+    
+   }
+   .pal{
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    place-self: center;
+    max-width: 60%;
+    color: rgb(140, 137, 137);
+   }
+   .items{
+height: 10rem;
+width: 18rem;
+background-color: rgb(63, 204, 236);
+border-radius: 0.8rem;
+overflow: hidden;
+   }
+   .cont{
+    max-width: 90%;
+     margin: 0 auto; 
+    display: grid;
+    gap: 1rem;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+   }
+#it1{
+display: flex;
+flex-direction: column;
+justify-content:center ;
+align-items: center;
+}
+#it1 h2{ margin-top: 0.4rem;
+    color:white ;
+}
+#it1 p{margin-top: 0.4rem;
+    color: white;
+    max-width: 95%;
+}
+.items img{
+    height: 2rem;
+    weight:2rem;
+    border-radius: 50%;
+}
+#circle{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#it2{
+    background-color:rgb(245, 177, 41) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    }
+    #it2 h2{ margin-top: 0.4rem;
+        color:white ;
+    }
+    #it2 p{margin-top: 0.4rem;
+        color: white;
+        max-width: 95%;
+    }
+    #it3{
+        background-color: rgb(255, 143, 161);
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        align-items: center;
+        }
+        #it3 h2{ margin-top: 0.4rem;
+            color:white ;
+        }
+        #it3 p{
+            margin-top: 0.4rem;
+            color: white;
+            max-width: 95%;
+        }
+        #it4{
+            background-color: rgb(71, 142, 71);
+            display: flex;
+            flex-direction: column;
+            justify-content:center ;
+            align-items: center;
+            }
+            #it4 h2{ margin-top: 0.4rem;
+                color:white ;
+            }
+            #it4 p{
+                margin-top: 0.4rem;
+                color: white;
+                max-width: 95%;
+            }
+            #it5{
+                background-color:rgb(146, 82, 167);
+                display: flex;
+                flex-direction: column;
+                justify-content:center ;
+                align-items: center;margin-bottom: 2rem;
+                }
+                #it5 h2{
+                    margin-top: 0.4rem;
+                    color:white ;
+                }
+                #it5 p{
+                    margin-top: 0.4rem;
+                    color: white;
+                    max-width: 95%;
+                    
+                }
+                #it6{
+                    background-color:  rgb(85, 103, 207);;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center ;
+                    align-items: center;margin-bottom: 2rem;
+                    }
+                    #it6 h2{
+                        margin-top: 0.4rem;
+                        color:white ;
+                    }
+                    #it6 p{
+                        margin-top: 0.4rem;
+                        color: white;
+                        max-width: 95%;
+                    }
+                    
+                    @media screen and (max-width:730px){
+                        .cont{
+                            grid-template-columns: repeat(1,1fr);
+                            grid-template-rows: repeat(6,1fr);
+                        }
+                        .items{
+                            width:22rem ;
+                        }
+                        .const{
+                            margin: 0 auto;
+                        }
+                        .foot{
+                            width: 100vw;
+                        }
+                    }
+                    .Testimonial{
+                        margin: 2rem auto;
+                        text-align: center;
+                    }
+                    .testi-heading{
+                        font-size: 2rem;
+                        font-weight: 1000;
+                       
+                    }
+                    .dabba{
+                        display: grid;
+                        grid-template-columns:  repeat(3,1fr);
+                        padding: 0 auto;
+                      max-width: 70%;
+                      place-self: center;
+                      gap: 1.4rem;
+                      margin-top: 1rem;
+                    }
+                    .review{
+                       
+                height: 13rem;
+                place-self: center;
+                font-weight: 16rem;
+               
+                text-align: center;
+                padding: 0.9rem;
+                border: 1px solid rgb(137, 136, 136);
+                border-radius: 10px;
+                /* box-shadow: 0 1px 4px; */
+                overflow: hidden;
+                    }
+                    .review:hover{
+                        scale: 1.02;
+                    }
+                    #rp1{
+                        max-width: 95%;
+                        text-align: center;
+                        margin: 0 auto;
+                        color:rgb(76, 75, 75) ;
+                    }
+                    #chori{
+                        height:3.5rem;
+                        width: 4rem;
+                        border-radius: 50%;
+                    
+                    }
+                    #rp2{
+                        color: rgb(60, 71, 225);
+                        font-size:1.2rem ;
+                        font-weight: 700;
+                    }
+                    .newsletter{
+                       background-color:rgb(247, 243, 243) ;
+                     max-width: 80%;
+                     margin: 0 auto;
+                     display: flex;
+                    }
+                    #imagen{
+                        height: 17rem;
+                        width: 30rem;
+                    }
+                    #hn{
+                        color: blue;
+                        margin: auto;
+                        font-weight: 1000;
+                        /* font-size:1.5rem ; */
+                    }
+                    #pn{
+                        color: rgb(138, 136, 136);
+                     
+                        font-size: 1.2rem;
+                        padding-top: 0.8rem;
+                        padding-bottom: 0.5rem;
+                    }
+                    #n{
+                        margin: auto;
+                        
+                    }#tp{
+                        padding-top: 1rem;
+                    }
+                    button{
+                        background-color: blue;
+                        color: white;
+                    }
+                    #ac{
+                        color: rgb(45, 207, 207);
+                        text-decoration:underline;
+                    }
